@@ -1,15 +1,20 @@
-# Jekyll configuration
-# https://jekyllrb.com/docs/configuration/
+---
 title: Jesse Campbell
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: jesselcampbell@gmail.com
 description: Product designer living in Victoria, Canada.
 url: https://jesselcampbell.com
-
-# Build settings
 markdown: kramdown
 theme: minima
 gems:
-  - jekyll-feed
+- jekyll-feed
 exclude:
-  - Gemfile
-  - Gemfile.lock
+- Gemfile
+- Gemfile.lock
