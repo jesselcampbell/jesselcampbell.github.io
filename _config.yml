@@ -1,0 +1,15 @@
+# Jekyll configuration
+# https://jekyllrb.com/docs/configuration/
+title: Jesse Campbell
+email: jesselcampbell@gmail.com
+description: Product designer living in Victoria, Canada.
+url: https://jesselcampbell.com
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
