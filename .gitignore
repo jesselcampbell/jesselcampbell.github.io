@@ -1,0 +1,18 @@
+# Jekyll
+_site
+.sass-cache
+.jekyll-metadata
+
+
+# macOS
+*.DS_Store
+.TemporaryItems
+.Trashes
+.AppleDouble
+.LSOverride
+._*
+Icon
+
+
+# Dependencies
+node_modules

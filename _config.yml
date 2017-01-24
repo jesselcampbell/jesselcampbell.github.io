@@ -1,0 +1,20 @@
+---
+title: Jesse Campbell
+timezone: America/Los_Angeles
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+email: jesselcampbell@gmail.com
+description: Product designer living in Victoria, Canada.
+url: https://jesselcampbell.com
+markdown: kramdown
+theme: minima
+gems:
+- jekyll-feed
+exclude:
+- Gemfile
+- Gemfile.lock
