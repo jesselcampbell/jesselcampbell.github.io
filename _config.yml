@@ -1,20 +1,26 @@
 ---
 title: Jesse Campbell
-timezone: America/Los_Angeles
+url: https://jesselcampbell.com
+description: Product designer living in Victoria, Canada.
+timezone: America/Vancouver
+
+contact:
+  email: jesselcampbell@gmail.com
+  medium:
+    username: jesselcampbell
+    url: https://medium.com/@jesselcampbell
+  instagram:
+    username: jesselcampbell
+    url: https://instagram.com/jesselcampbell
+
 collections:
-  posts:
-    title: Posts
+  work:
+    title: Work
     output: true
   uploads:
     title: Uploads
     output: true
-email: jesselcampbell@gmail.com
-description: Product designer living in Victoria, Canada.
-url: https://jesselcampbell.com
-markdown: kramdown
-theme: minima
-gems:
-- jekyll-feed
+
 exclude:
 - Gemfile
 - Gemfile.lock
