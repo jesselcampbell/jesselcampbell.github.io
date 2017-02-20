@@ -8,13 +8,19 @@ collections:
   uploads:
     title: Uploads
     output: true
-email: jesselcampbell@gmail.com
-description: Product designer living in Victoria, Canada.
+  work:
+    title: Work
+    output: true
 url: https://jesselcampbell.com
-markdown: kramdown
-theme: minima
-gems:
-- jekyll-feed
+description: Product designer living in Victoria, Canada.
+contact:
+  email: jesselcampbell@gmail.com
+  medium:
+    username: jesselcampbell
+    url: https://medium.com/@jesselcampbell
+  instagram:
+    username: jesselcampbell
+    url: https://instagram.com/jesselcampbell
 exclude:
 - Gemfile
 - Gemfile.lock
