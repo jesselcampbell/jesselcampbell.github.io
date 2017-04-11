@@ -1,20 +1,6 @@
-# Basic Info
+---
 title: Jesse Campbell
-baseurl: ""
-url: "https://jesselcampbell.com"
 timezone: America/Los_Angeles
-description: Digital Product Designer
-status: Currently making things with Pixel Union.
-contact:
-  email: jesselcampbell@gmail.com
-  medium:
-    username: jesselcampbell
-    url: https://medium.com/@jesselcampbell
-  instagram:
-    username: jesselcampbell
-    url: https://instagram.com/jesselcampbell
-
-# Siteleaf
 collections:
   posts:
     title: Posts
@@ -25,17 +11,25 @@ collections:
   work:
     title: Work
     output: true
-
-# Excludes
+baseurl: ''
+url: https://jesselcampbell.com
+description: Digital Product Designer
+status: Currently making things with Pixel Union.
+contact:
+  email: jesselcampbell@gmail.com
+  medium:
+    username: jesselcampbell
+    url: https://medium.com/@jesselcampbell
+  instagram:
+    username: jesselcampbell
+    url: https://instagram.com/jesselcampbell
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - readme.md
-  - package.json
-  - node_modules
-  - gulpfile.js
-  - _assets
-
-# Gems
+- Gemfile
+- Gemfile.lock
+- readme.md
+- package.json
+- node_modules
+- gulpfile.js
+- _assets
 gems:
-  - jekyll-sitemap
+- jekyll-sitemap
