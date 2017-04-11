@@ -1,5 +1,5 @@
 # jesselcampbell.com
-This is the personal website for Jesse Campbel, built using Jekyll and Gulp, with Siteleaf integrated for content management.
+This is the personal website for Jesse Campbell, built using Jekyll and Gulp, with Siteleaf integrated for content management.
 
 ## Resources
 - [Optimizing Jekyll Performance with Gulp](http://savaslabs.com/2016/10/19/optimizing-jekyll-with-gulp.html)
