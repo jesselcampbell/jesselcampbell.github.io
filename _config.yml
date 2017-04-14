@@ -11,18 +11,15 @@ collections:
   work:
     title: Work
     output: true
-baseurl: ''
+baseurl: 
 url: https://jesselcampbell.com
 description: Digital Product Designer
 status: Currently making things with Pixel Union.
 contact:
   email: jesselcampbell@gmail.com
-  medium:
-    username: jesselcampbell
-    url: https://medium.com/@jesselcampbell
-  instagram:
-    username: jesselcampbell
-    url: https://instagram.com/jesselcampbell
+  medium: jesselcampbell
+  instagram: jesselcampbell
+  github: jesselcampbell
 exclude:
 - Gemfile
 - Gemfile.lock
