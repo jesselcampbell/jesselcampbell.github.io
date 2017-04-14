@@ -111,14 +111,6 @@ gulp.task('build:jekyll', function() {
     .on('error', gutil.log);
 });
 
-// Run jekyll build command using local config
-gulp.task('build:jekyll:local', function() {
-  var shellCommand = 'bundle exec jekyll build --future --config _config.yml,_config.local.yml';
-  return gulp.src('')
-    .pipe(run(shellCommand))
-    .on('error', gutil.log);
-});
-
 // Delete the _site directory
 gulp.task('clean:jekyll', function(callback) {
   del(['_site']);
@@ -126,7 +118,7 @@ gulp.task('clean:jekyll', function(callback) {
 });
 
 // Build site anew
-gulp.task('build', function() {
+gulp.task('build', function(callback) {
   runSequence('clean',
     [
       'build:scripts',
@@ -135,19 +127,6 @@ gulp.task('build', function() {
       'build:fonts'
     ],
     'build:jekyll',
-    callback);
-});
-
-// Builds site anew using local config
-gulp.task('build:local', function(callback) {
-  runSequence('clean',
-    [
-      'build:scripts',
-      'build:images',
-      'build:styles',
-      'build:fonts'
-    ],
-    'build:jekyll:local',
     callback);
 });
 
@@ -162,21 +141,21 @@ gulp.task('clean', [
 // Default task
 gulp.task('default', ['build']);
 
-// Build Jekyll and then reloadi BrowserSync
-gulp.task('build:jekyll:watch', ['build:jekyll:local'], function(callback) {
+// Build Jekyll and then reload BrowserSync
+gulp.task('build:jekyll:watch', ['build:jekyll'], function(callback) {
   browserSync.reload();
   callback();
 });
 
 // Build scripts and then reload BrowserSync
 gulp.task('build:scripts:watch', ['build:scripts'], function(callback) {
-  runSequence('build:jekyll:local');
+  runSequence('build:jekyll');
   browserSync.reload();
   callback();
 });
 
 // Serve task
-gulp.task('serve', ['build:local'], function() {
+gulp.task('serve', ['build'], function() {
   browserSync.init({
     server: paths.siteDir,
     ghostMode: false, // Toggle to mirror clicks, reloads etc. (performance)
@@ -187,7 +166,6 @@ gulp.task('serve', ['build:local'], function() {
 
   // Watch site settings
   gulp.watch(['_config.yml'], ['build:jekyll:watch']);
-  gulp.watch(['_config.local.yml'], ['build:jekyll:watch']);
 
   // Watch .scss files; changes are piped to BrowserSync
   gulp.watch('_assets/styles/**/*.scss', ['build:styles']);
