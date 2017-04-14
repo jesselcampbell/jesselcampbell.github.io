@@ -11,8 +11,10 @@ collections:
   work:
     title: Work
     output: true
+baseurl: ''
 url: https://jesselcampbell.com
-description: Product designer living in Victoria, Canada.
+description: Digital Product Designer
+status: Currently making things with Pixel Union.
 contact:
   email: jesselcampbell@gmail.com
   medium:
@@ -24,3 +26,10 @@ contact:
 exclude:
 - Gemfile
 - Gemfile.lock
+- readme.md
+- package.json
+- node_modules
+- gulpfile.js
+- _assets
+gems:
+- jekyll-sitemap
