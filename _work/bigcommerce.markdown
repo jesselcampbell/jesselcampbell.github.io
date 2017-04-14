@@ -1,6 +1,7 @@
 ---
 title: BigCommerce
 date: 2017-04-13 22:12:00 -07:00
+published: false
 subheading: Redesigning the merchant experience
 disclaimer: This was a Pixel Union project that involved tireless efforts from the
   whole team and the incredible leadership of the BigCommerce design team.
