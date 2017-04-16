@@ -7,6 +7,10 @@ project:
   subheading: Redesigning the merchant experience
   role: Design Lead
   deliverables: Concept design, prototypes, styleguide, implementation roadmap
+images:
+- "/uploads/test-1.jpg"
+- "/uploads/test-2.jpg"
+- "/uploads/test-3.jpg"
 ---
 
 This was a Pixel Union project that involved tireless efforts from the whole team and the incredible leadership of the BigCommerce design team.
