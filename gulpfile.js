@@ -181,7 +181,7 @@ gulp.task('serve', ['build'], function() {
   gulp.watch('_work/**/*.+(md|markdown|MD)', ['build:jekyll:watch']);
 
   // Watch HTML and markdown files
-  gulp.watch(['**/*.+(html|md|markdown|MD)', '!_site/**/*.*'], ['build:jekyll:watch']);
+  gulp.watch(['**/*.+(html|md|markdown|MD|json)', '!_site/**/*.*'], ['build:jekyll:watch']);
 
   // Watch favicon.png
   gulp.watch('favicon.png', ['build:jekyll:watch']);

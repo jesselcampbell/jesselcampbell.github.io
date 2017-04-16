@@ -1,0 +1,14 @@
+---
+---
+[
+  {
+    "title": "{{ site.title }}",
+    "url": "{{ site.url }}",
+    "description": "{{ site.description}}",
+    "status": "{{ site.status }}",
+    "contact": {
+      {% for item in site.contact %} "{{ item[0] }}": "{{ item[1] }}"{% unless forloop.last %},
+      {% endunless %}{% endfor %}
+    }
+  }
+]

@@ -1,0 +1,26 @@
+---
+---
+[
+  {% for post in site.work %}{
+    "title": "{{ post.title }}",
+    "url": "{{ post.url }}",
+    "date": "{{ post.date }}",
+    "categories": "{{ post.categories }}",
+    "tags": "{{ post.tags }}",
+    "subheading": "{{ post.subheading }}",
+    "disclaimer": "{{ post.disclaimer }}",
+    "role": "{{ post.role }}",
+    "deliverables": "{{ post.deliverables }}",
+    "content": "{{ post.content}}",
+    "images": [{% for image in post.images %}
+      "{{ image }}"{% unless forloop.last %},{% endunless %}{% endfor %}
+    ]
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
+
+{% assign isFirst = true %}
+[{% for item in site.work %}{% if item.dir contains work.dir and item.url != work.url %}
+  {% if isFirst != true %},{% endif %}{% assign isFirst = false %}
+  {{ item | jsonify }}{% endif %}{% endfor %}
+]
