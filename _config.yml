@@ -8,7 +8,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-baseurl:
+baseurl: 
 url: https://jesselcampbell.com
 description: Digital Product Designer
 status: Currently making things with Pixel Union.
